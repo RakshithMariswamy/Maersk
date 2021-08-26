@@ -1,0 +1,89 @@
+body{
+    background-color: #EFEFEF
+}
+button{
+    color: #FFF;
+    background-color: #72C3DC;
+    padding: 10px;
+    border: 1px solid #72C3DC;
+    border-radius: 5px;
+    margin-right:20px;
+}
+
+.maersk-head{
+    width:100%;
+    margin:auto;
+    text-align:center;
+}
+.maersk-Main{
+    width: 100%;
+    display: flex;
+}
+
+#results {
+    width:80%;
+}
+
+.maersk-button{
+    width:20%;
+}
+
+.maersk-blockView{
+    color: #fff;
+    background: blue;
+    padding: 30px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 24px;
+}
+
+.maersk-blockMain{
+    display:flex;
+    width:100%;
+    flex-flow: wrap;
+}
+
+.desktopButton{
+    display:block;
+}
+.mobileButton{
+    display:none;
+}
+
+
+.col-3 {width: 25%;}
+
+@media only screen and (max-width: 414px) {
+    body {
+        background-color: #fff;
+      }
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .desktopButton{
+      display:none;
+  }
+  .mobileButton{
+      display:block;
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+  }
+  #results{
+      width:100%;
+  }
+
+  .maersk-badge{
+      width: 10%;
+      float:left;
+  }
+
+  .maersk-blockView{
+      color:#000;
+      border-style:solid;
+      border-left-width:thick;
+  }
+}
+
